@@ -43,7 +43,7 @@ export default function MyBookings() {
       );
   }
 
-  if (!user) return null; // Prevent flash before redirect
+  if (!user) return null; 
 
   return (
     <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">

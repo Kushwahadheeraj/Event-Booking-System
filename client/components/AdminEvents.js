@@ -69,7 +69,6 @@ export default function AdminEvents() {
       if (isEditing) {
         const { data } = await api.put(`/events/${currentEvent._id}`, currentEvent);
         if (data.success) {
-          // Refresh list to get populated category
           fetchEvents();
           toast.success('Event updated');
         }
